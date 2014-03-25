@@ -1,0 +1,28 @@
+{% load base_extras%}
+
+<div class="row-fluid">
+    <div class ="span12">
+        <div class="navbar navbar-static-top navbar-inverse">
+            <div class="navbar-inner">
+                <div class="container">
+                    <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </a>
+                    <a class="brand" href="{% url 'home' %}}">SLAM ROBOTICS</a>
+                    <div class="nav-collapse">
+                        <ul class="nav">
+
+                            <li class="greenYellow"><a href="{% url 'home' %}}">Home</a></li>
+                            <li class="greenYellow"><a href="{% url 'map' %}">Map</a></li>
+                            <li class="greenYellow"><a href="{% url 'home' %}}">Custom Report!</a></li>
+
+                        </ul>
+                    </div><!-- /.nav-collapse -->
+                </div><!-- /.container -->
+            </div><!-- /.navbar-inner -->
+        </div><!-- /.navbar -->
+    </div>
+</div>
+

@@ -1,0 +1,65 @@
+.top-buffer { margin-top:50px; }
+
+.table_do_ec {
+    table-layout: fixed;
+    word-wrap: break-word;
+    overflow: hidden;
+    width: 100%;
+}
+
+.table_do_ec tr #count{
+       width: 10%;
+     }
+
+.table_do_ec tr #name{
+       width: 75%;
+     }
+
+.table_do_ec tr #sample{
+       width: 5%;
+     }
+
+.table_do_ec tr #code{
+       width: 20%;
+     }
+
+
+
+#commentWrapper {
+  position: rel;
+  margin-left: 35px;
+  width: 580px;
+}
+
+#comment {
+  position: absolute;
+  top: 0;
+  width:580px;
+  /* just used to show how to include the margin in the effect */
+  margin-top: 100px;
+  border-top: 1px solid purple;
+  padding-top: 19px;
+}
+
+#comment.fixed {
+  position: fixed;
+  top: 0;
+}
+
+.nvtooltip {
+
+background-color: #A6D96A;
+
+}
+
+.popover-content {
+    max-width: 200px;
+    height: 250px;
+    overflow-y:scroll;
+}
+
+select {
+height : 20px;
+width : 130px;
+}
+

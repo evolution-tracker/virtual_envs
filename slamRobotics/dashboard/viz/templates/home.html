@@ -1,0 +1,71 @@
+{% extends 'site_base.html' %}
+{% block script_datgui %}
+        <script type="text/javascript">
+
+var FizzyText = function() {
+  this.message = 'H2S conc';
+  this.explode = function() {  };
+  this.pipe_id = 1;
+  // Define render logic ...
+};
+
+window.onload = function() {
+  var text = new FizzyText();
+  var gui = new dat.GUI();
+  gui.add(text, 'message');
+  gui.add(text, 'pipe_id',{{ pipe_id|safe }} );
+  gui.add(text, 'displayOutline');
+  gui.add(text, 'explode');
+};
+
+</script>
+{% endblock %}
+{% block content %}
+<div class="container-fluid">
+
+    <div class="row-fluid top-buffer">
+    <div class="span5 offset1">
+            <caption><h3>{{ b }}</h3></caption>
+         </div>
+    </div>
+    <div class="row-fluid top-buffer">
+
+
+        <div class="span5 offset1">
+
+            <table class="table_do_ec table table-bordered table-striped table-condensed table-hover" id="mytable">
+                <caption><h4>{{ message1 }}</h4></caption>
+                <thead>
+                {% block table_headers %}
+                {% endblock %}
+                </thead>
+                <tbody>
+                {% block table_content %}
+                {% endblock %}
+
+                </tbody>
+            </table>
+            {% block additional_table %}
+            {% endblock %}
+        </div>
+
+        <div class="span5 top-buffer" id="commentWrapper">
+
+            <div class="row-fluid">
+                <div class="span12" id="comment">
+                    <div id = 'trendDiv'>
+                     <div id="trend">
+                    </div>
+                        </div>
+                </div>
+            </div>
+            <div id="cc">
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+
+
+
